@@ -96,6 +96,8 @@ services:
     environment:
       PORT: 8082
       KAFKA_BROKERS: kafka:9092
+    volumes:
+      - ./src/microservices/events:/app
     networks:
       - cinemaabyss-network
 
