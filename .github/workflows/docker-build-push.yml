@@ -50,7 +50,10 @@ jobs:
             type=sha,format=short
             type=ref,event=branch
             latest
-
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
       - name: Build and push Monolith Docker image
         uses: docker/build-push-action@v4
         with:
@@ -60,6 +63,7 @@ jobs:
           labels: ${{ steps.meta-monolith.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          platforms: linux/amd64,linux/arm64
 
       - name: Extract metadata (tags, labels) for Movies Service
         id: meta-movies
