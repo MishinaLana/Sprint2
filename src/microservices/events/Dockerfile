@@ -8,6 +8,8 @@ RUN pecl install rdkafka \
 
 WORKDIR /app
 
+COPY ./index.php /app
+
 EXPOSE 8082
 
 CMD ["php", "-S", "0.0.0.0:8082", "-t", "/app"]
