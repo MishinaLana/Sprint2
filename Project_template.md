@@ -57,7 +57,15 @@
     - Добавьте в docker-compose новый сервис, kafka там уже есть
 
 Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman 
-Приложите скриншот тестов и скриншот состояния топиков Kafka из UI http://localhost:8090 
+Приложите скриншот тестов 
+
+![image](https://github.com/user-attachments/assets/e24dc8d1-e6fc-4d28-bd02-af47b6e1f772)
+
+
+и скриншот состояния топиков Kafka из UI http://localhost:8090 
+
+![image](https://github.com/user-attachments/assets/3da6ee64-e685-473e-ad1f-c49c6339e617)
+
 
 # Задание 3
 
@@ -272,8 +280,15 @@ cat .docker/config.json | base64
   Часть тестов с health-чек упадет, но создание событий отработает.
   Откройте логи event-service и сделайте скриншот обработки событий
 
+![image](https://github.com/user-attachments/assets/184d5e71-0a6b-479d-9412-41e42be02265)
+
+
+
 #### Шаг 3
-Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.
+Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и скриншот вывода event-service после вызова тестов.
+
+![image](https://github.com/user-attachments/assets/8d2d7561-b3c9-48ac-b27d-feafe73288f5)
+
 
 
 # Задание 4
@@ -349,6 +364,12 @@ minikube tunnel
 Потом вызовите 
 https://cinemaabyss.example.com/api/movies
 и приложите скриншот развертывания helm и вывода https://cinemaabyss.example.com/api/movies
+
+![image](https://github.com/user-attachments/assets/675f1e37-45e3-4b8e-bdda-cc6e3d49bcf7)
+
+![image](https://github.com/user-attachments/assets/a3dcb26f-4ffb-469a-9a76-8cccfbe7a206)
+
+
 
 ## Удаляем все
 
