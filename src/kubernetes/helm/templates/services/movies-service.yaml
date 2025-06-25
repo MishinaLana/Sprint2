@@ -68,7 +68,7 @@ metadata:
     app.kubernetes.io/instance: {{ .Release.Name }}
 spec:
   selector:
-    app: movies-service
+    app: "movies-service"
   ports:
   - port: {{ .Values.moviesService.service.port }}
     targetPort: {{ .Values.moviesService.service.targetPort }}

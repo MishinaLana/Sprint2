@@ -5,7 +5,7 @@
 1. Спроектируйте to be архитектуру КиноБездны, разделив всю систему на отдельные домены и организовав интеграционное взаимодействие и единую точку вызова сервисов.
 Результат представьте в виде контейнерной диаграммы в нотации С4.
 Добавьте ссылку на файл в этот шаблон
-[ссылка на файл](ссылка)
+[ссылка на файл](https://www.planttext.com/?text=fLTTQzjM6BuFv3-Svig5bjpqSfIcJYWb7RZDTcrEvBDKH9PSITvcnY0VoxgIbhJGGIaRQHcZjwg96yMndRzmpZ_Q-xwIfICTASko2zlwEi_pVftdaUy58VV3VjTPN5XSk66xbjFl2FPLyyvoyqwxwRaXjrtXtwswr-rvhd33kxWoj4D7i6-ys_S5av7QKGSoLdjo9CTgJ-sh7HdXKotX1vxRw0V2lyMMvB6SoNFrKfx2xn1MuVDmldJ9FQPs0NYNJYVgaCdtCfPJUEOpN3YL9t0SBTr4her148fk-xxNTplS7pGioAFBLpO7GO3ubUlOJuiBZ6LPDtZFRc_nKFp01x1cfVMGFKZECCHrpzsYK7-7vGWMgIC6WStKSpcM4PD3AC8Cxb50EYpctuRFzxOb0E1RE6GRoIa2Fl08zYzvWNM3xCyXnYbGZ9Yyg2pBaPp8kCpIuuCkj2VGc5hffQkpdQSSN-1M1OS5Hm2eKJIJArTb64CUKsB0xvcSb1cw8kGT7dADuklqqbKv9d84s15s0YvDrM5L9hwml2uK1u1jpzMBzgHufuBr8n3i02SC9eE34MKreG20K_qAOPmbV0NErSra4ZgR2F96lgrfBtpEaAVb1U6MBpOUFoBMlodJQPvdbfywk0pfPZc8R53oG63J9k2dy3rECxX621L0EAnc3FD1qcfH78teMlGQ20cHIPpDbyPi38mwk0fxrRBAhlkYOmSqMV1RZJLMhzHlA28nAju856ytdo8TIpWy26qBGDQIeq1mttgQQIZCf1mRnPZcnIW0FkwBlcXiy--sELK3mfh1CXXl36E6UgbUf57IGApqkFLKi7LSGPolAT2fEg2bKz9Oo6T80n13ZL0HOGn9muUOB8RniwROQp-63Muzwzl-t2Lo4SBDEofv0AxNbZhUW3lX8DcN1Qiu1sa-eaq1GT6DkBIso_rj4VOSRWaoYJ_GoYZ_FTB29Ex3n62U22Trig9Do7SGNxRzr3wkPgHBCOO0MQHTpc4A02LtI9rm7rmbIg1o7Qit1CGsa2iSmKJNDJ_6-IEA4_YcKKfgPa2RHc0Y5yQl4gL2x4qOKywrIfe8sJ0VuqH22Z22g4gKsWmK2RinnfEouAGHfW3r1d5jv5h8BEOFbMOIumn0a_-r-obEHNF-1t0--JcWvcEVwCMFUhLCcvu61xeqlCxycYDRSgl_HbVfQocLKQMY9sb4fHHgkckEOibhwX5hdCIi-zn9w1KayOWuxv6HKMuMcZUeNr2Oe0MepSDyjLdwWYgJlWyXwPFSjMPpzQXldoRFVyAJpoc8x6LjcQGJBqLppCzKtNsods4zRbcwZukYnO1fHEzcfrZUIsHTimFBRbiTVATzkDnSPIsx9nmmoMnUahkb_nLl0Us2TFuCN8-jzpU5xufG10dwFTZjy6Vh7m00)
 
 # Задание 2
 
@@ -57,7 +57,15 @@
     - Добавьте в docker-compose новый сервис, kafka там уже есть
 
 Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman 
-Приложите скриншот тестов и скриншот состояния топиков Kafka из UI http://localhost:8090 
+Приложите скриншот тестов 
+
+![image](https://github.com/user-attachments/assets/e24dc8d1-e6fc-4d28-bd02-af47b6e1f772)
+
+
+и скриншот состояния топиков Kafka из UI http://localhost:8090 
+
+![image](https://github.com/user-attachments/assets/3da6ee64-e685-473e-ad1f-c49c6339e617)
+
 
 # Задание 3
 
@@ -272,8 +280,15 @@ cat .docker/config.json | base64
   Часть тестов с health-чек упадет, но создание событий отработает.
   Откройте логи event-service и сделайте скриншот обработки событий
 
+![image](https://github.com/user-attachments/assets/184d5e71-0a6b-479d-9412-41e42be02265)
+
+
+
 #### Шаг 3
-Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.
+Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и скриншот вывода event-service после вызова тестов.
+
+![image](https://github.com/user-attachments/assets/8d2d7561-b3c9-48ac-b27d-feafe73288f5)
+
 
 
 # Задание 4
@@ -349,6 +364,12 @@ minikube tunnel
 Потом вызовите 
 https://cinemaabyss.example.com/api/movies
 и приложите скриншот развертывания helm и вывода https://cinemaabyss.example.com/api/movies
+
+![image](https://github.com/user-attachments/assets/675f1e37-45e3-4b8e-bdda-cc6e3d49bcf7)
+
+![image](https://github.com/user-attachments/assets/a3dcb26f-4ffb-469a-9a76-8cccfbe7a206)
+
+
 
 ## Удаляем все
 
